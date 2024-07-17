@@ -1,0 +1,1 @@
+export {ChatComponent} from './ui/chat-component'

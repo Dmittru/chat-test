@@ -1,0 +1,1 @@
+export {formatMessage} from './formatMessage'

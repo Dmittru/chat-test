@@ -1,0 +1,63 @@
+@import 'themes/light.scss';
+@import 'themes/dark.scss';
+@import 'breakpoints.scss';
+
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  background: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 1s;
+}
+
+.fullfilled {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.stretched {
+  width: 100%;
+  height: 100%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-page{
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 1s;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 2rem 1rem;
+  hyphens: auto;
+  overflow-wrap: break-word;
+
+  &__header{
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  &__main-link{
+    color: var(--text-main-inverse);
+    background-color: var(--bg-main-inverse);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .main-page {
+    font-size: 20px;
+    &__header {
+      font-size: 48px;
+    }
+  }
+}

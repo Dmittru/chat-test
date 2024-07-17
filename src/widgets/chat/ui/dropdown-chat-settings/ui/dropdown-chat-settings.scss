@@ -1,0 +1,41 @@
+.dropdown-menu {
+
+  &__item {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+    &:focus {
+      color: inherit !important;
+    }
+
+    &:focus-visible {
+      color: inherit !important;
+    }
+
+    &:hover {
+      color: inherit !important;
+    }
+
+    &:active {
+      color: inherit !important;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .dropdown-menu {
+
+    &__item {
+      //width: 150px;
+    }
+  }
+}
+
+.clear-chat-btn {
+  color: var(--text-dangerous);
+
+  &:hover {
+    color: inherit !important;
+  }
+}

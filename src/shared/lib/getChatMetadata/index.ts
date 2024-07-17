@@ -1,0 +1,1 @@
+export {getChatMetadata} from './getChatMetadata'

@@ -1,0 +1,45 @@
+:root {
+  --xs: 400px;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--bg-main);
+  transition: background-color 1s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button-ghost {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  box-shadow: none;
+  padding: 0;
+}
+
+.button-ghost:hover,
+.button-ghost:focus,
+.button-ghost:active {
+  background-color: transparent !important;
+  color: inherit;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}

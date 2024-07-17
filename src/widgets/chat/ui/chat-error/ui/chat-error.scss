@@ -1,0 +1,28 @@
+.error-container {
+  background-color: var(--bg-main);
+  transition: background-color 1s;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__link {
+    color: var(--text-desc);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+      color: var(--text-main);
+    }
+  }
+
+  &__error-message {
+    color: var(--text-main);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
