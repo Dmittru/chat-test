@@ -15,7 +15,7 @@ interface Chats {
     getMessages: (chatId: string) => IMessage[];
     addMessage: (chatId: string, message: IMessage) => void;
     removeMessage: (chatId: string, messageId: string) => void;
-    editMessage: (chadId: string, messageId: string, text: string, files) => void;
+    editMessage: (chadId: string, messageId: string, text: string, files: File[]) => void;
     selectEditMessage: (chadId: string, messageId: string) => void;
     updateMessageStatus: (chadId: string, messageId: string, status: string) => void;
     removeChat: (chatId: string) => void;
